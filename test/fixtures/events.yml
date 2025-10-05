@@ -1,8 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  owner_id: MyString
-  bigint: MyString
+  owner_id: 12345
   name: MyString
   place: MyString
   start_at: 2025-10-05 16:38:52
@@ -10,8 +9,7 @@ one:
   content: MyText
 
 two:
-  owner_id: MyString
-  bigint: MyString
+  owner_id: 23456
   name: MyString
   place: MyString
   start_at: 2025-10-05 16:38:52
