@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_09_28_124914) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_05_073852) do
+  create_table "events", force: :cascade do |t|
+    t.bigint "owner_id"
+    t.string "name", null: false
+    t.string "place", null: false
+    t.datetime "start_at", null: false
+    t.datetime "end_at", null: false
+    t.text "content", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "provider", null: false
     t.string "uid", null: false
